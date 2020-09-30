@@ -1,0 +1,219 @@
+@import '../Helper_Sass/mixin';
+@import '../Helper_Sass/variables';
+
+.seatList{
+    padding: 200px 0;
+    .seatList_detail{
+            background: url(../Image/screen.png);
+            width: 100px;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 50px 0;
+        td {
+            padding:0;
+        }
+    
+    }
+    .contentRight{
+        .totalCost{
+            @include styleText($color-black-0,70px,$fw-bold);
+            text-align: center;
+        }
+        .bookingEdit{
+            @include styleText(white,30px,$fw-normal);
+            line-height: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.button_Form{
+    height: 40px;
+    width: 100%;
+    text-align:center;
+    
+    display: inline-block;
+    background-color: $color-yellow;
+    border: 1px solid $color-orange;
+    @include styleText(white,$fs-3,$fw-normal);
+    &:hover{
+        background-color: $color-orange;
+        color: white;
+    }
+    &:focus{
+        border: 1px solid $color-orange;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.demo{
+    height: 27px;
+    width: 33px;
+    margin: 5px;
+    text-align: center;
+    background: green; 
+    color: transparent;
+    border: 1px solid green;
+    border-radius: 8px 5px 5px;
+    position: relative;
+    color: white;
+    &::before{
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background: transparent;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.856);
+        top: -3px;
+        left: 3px;
+        color: white;
+        
+        
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.seat{
+    height: 27px;
+    width: 33px;
+    margin: 5px;
+    text-align: center;
+    background:#3e515d; 
+    color: transparent;
+    border: 1px solid #3e515d;
+    border-radius: 8px 5px 5px;
+    position: relative;
+    color: white;
+    font-size: 12px;
+    &::before{
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background: #3e515d;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.856);
+        top: -3px;
+        left: 3px;
+        
+        
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.seatBooking{
+    height: 27px;
+    width: 33px;
+    margin: 5px;
+    text-align: center;
+    background: red;
+    color: transparent;
+    border: 1px solid red;
+    border-radius:  5px;
+    position: relative;
+    color: white;
+    cursor: no-drop !important;
+    // &::before{
+    //     content: "";
+    //     width: 25px;
+    //     height: 25px;
+    //     position: absolute;
+    //     background: #3e515d;
+    //     border-radius: 5px;
+    //     border: 2px solid rgba(255, 255, 255, 0.856);
+    //     top: -3px;
+    //     left: 3px;
+        
+        
+    // }
+    &:focus{
+        outline: none;
+    }
+}
+
+.seatSelect{
+    
+    height: 27px;
+    width: 33px;
+    margin: 5px;
+    text-align: center;
+    background:green !important; 
+    color: transparent;
+    border: 1px solid #3e515d;
+    border-radius: 8px 5px 5px;
+    position: relative;
+    color: white;
+    font-size: 12px;
+    &::before{
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background: transparent !important;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.856);
+        top: -3px;
+        left: 3px;
+        
+        
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.seatVip{
+    height: 27px;
+    width: 33px;
+    text-align: center;
+    background: $color-yellow; 
+    color: transparent;
+    border: 1px solid  transparent;
+    border-radius: 8px 5px 5px;
+    position: relative;
+    color: white;
+   
+    &::before{
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background: $color-yellow;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.856);
+        top: -3px;
+        left: 3px;
+        color: $color-yellow;
+        
+        
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+
+.text_Form_Title{
+    @include  styleText($color-black-1,18px,$fw-bold);
+    line-height: 25px;
+}
+
+.text_Green{
+    @include  styleText(#009e00,20px,$fw-bold);
+}
+
+.text_Normal{
+    @include  styleText($color-gray-0,18px,$fw-normal);
+}
+
+.text_Orange{
+    @include  styleText($color-orange,20px,$fw-bold);
+}
+
